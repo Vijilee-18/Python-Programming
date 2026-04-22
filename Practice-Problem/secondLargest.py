@@ -1,3 +1,4 @@
+'''Description : To Find the Second Largest Element from a list'''
 limit=int(input("Enter the Count of Numbers :"))
 list=[]
 for i in range(limit):
