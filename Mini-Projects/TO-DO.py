@@ -1,5 +1,6 @@
 #To-Do stimulator 
-
+'''Author : Vijilee George Kurian 
+   Description : A Simple To-Do Stimulation'''
 toDoList=[]
 choice=True
 while choice:
