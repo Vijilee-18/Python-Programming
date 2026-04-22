@@ -1,3 +1,5 @@
+'''Description : Refining distinct  element from a list'''
+
 limit=int(input("Enter the Count of numbers :"))
 list=[]
 for i in range(limit):
