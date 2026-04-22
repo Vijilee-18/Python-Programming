@@ -1,7 +1,7 @@
+# EMail Validator
 '''Author : Vijilee George Kurian 
    Description : A Simple Email Validator'''
 
-# EMail Validator
 emailAddress = input("Enter Your Email Address :")
 if '@' in emailAddress:
     index=emailAddress.index('@')
