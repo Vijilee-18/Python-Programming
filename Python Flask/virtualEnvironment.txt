@@ -1,1 +1,23 @@
+A virtual environment in Python is an isolated environment on our computer, where we can run and test our Python projects.
+It allows to manage project-specific dependencies without interfering with other projects or the original Python installation.
 
+After Virtual Environment Creation Each Python Project Container will have :
+->Has its own Python interpreter.
+->Has its own set of installed packages.
+->Is isolated from other virtual environments.
+->Can have different versions of the same package.
+
+Creating Virtual Environment Helps To:
+->Prevents package version conflicts between projects .
+->Makes projects more portable .
+->Keeps our system Python installation clean.
+->Allows testing with different Python versions.
+
+Python has built-in venv module for creating virtual environment.
+creation for windows 
+use this command in  terminal or CMD after creating a folder : python -m venv virtualEnvironmentName 
+eg : python -m venv flaskproject
+
+To Activate it use this Command : virtualEnvironmentName\Scripts\activate 
+To Deactivate just use: deactivate
+To Delete : rmdir /s /q myfirstproject 
