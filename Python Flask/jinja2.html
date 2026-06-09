@@ -1,0 +1,19 @@
+'''
+jinja2 is the template engine that allows to write the python scripts in an html script to make that html content dynamic.
+{{ }} is used as a printing symbol to get any output on html file from python file.
+{%%} used for conditions , iterations etc.
+from the python file (FLASK) we have to pass the value  to the html file. 
+inorder to do that , render_template("index.html",fruitList=fruit) 
+'''
+
+<html>
+  <head>
+    <title>Template Engine</title>
+    <body>
+      <ul>
+        {%for items in fruitList%}
+        <li>{{items}}</li>
+      </ul>
+     </body>
+  </head>
+</html>
