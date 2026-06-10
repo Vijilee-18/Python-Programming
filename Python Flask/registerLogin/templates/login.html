@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #con{
+            max-width: 500px;
+            border: 2px solid black;
+        }
+        input{
+            display: block;
+            padding: 8px;
+            width: 80%;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        #btn{
+            display: block;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            width: 90%;
+            padding: 8px;
+            background-color: hsl(240, 71%, 58%);
+            color: white;
+            border-radius: 5px;
+            border:none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/login" method="post">
+            <input type="text" placeholder="Enter Your Name" name ="userName">
+            <input type="email" placeholder="Enter Your Mail ID " name="userMail">
+            <input type="password" placeholder="Enter a Password" name="password">
+            <button type="submit" id="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
