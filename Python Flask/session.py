@@ -2,7 +2,7 @@
 Session is used to remeber a user between requests. 
 '''
 
-from flask import Flask , render_template, request, session
+from flask import Flask , render_template, request, session , redirect , url_for
 import secrets 
 app=Flask(__name__)
 app.secret_key=secrets.token_hex(16)
@@ -14,5 +14,11 @@ def login():
         if username=="admin" and password=="1234":
             session["user"]=username
             return render_template("base.html")
+@app.route("/dashboard")
+def dashboard():
+    if "user" in session:
+        username=session["user"]
+        return render_template("dashboard.html",user=username)
+    return redirect(url_for("login"))
 if __name__=="__main__":
     app.run(debug=True)
