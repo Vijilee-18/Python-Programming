@@ -1,0 +1,6 @@
+Python is an Object Oriented Language that allows to structure our code using classes and objects for better organiztaion and reusability .
+Its Main Advantages are :
+->Code Reusability 
+->Maintainability
+->Security
+->Scalability
