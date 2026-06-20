@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Register</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+</head>
+<body>
+    <div class="reg-login-container">
+        <div class="welcome-text-section">
+            <h1 id="heading">Welcome Our Strenghts </h1>
+        </div>
+        <div class="login-section">
+            <fieldset>
+                <legend>Please Fill the details</legend>
+                <form action="/register" method="post">
+                    <input type="text" id="empName" name="employeeName" placeholder="Enter Your Name" required>
+                    <input type="email" id="empMail" name="employeeMail" placeholder="Enter Your Mail" required>
+                    <input type="password" id="empPassword" name="empPassword" placeholder="Enter Your Password" required>
+                    <input type="password" id="empPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                    <input type="submit" value="Register">
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
