@@ -1,0 +1,36 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.reg-login-container{
+    display:grid;
+    padding:8px;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid blue;
+    border-radius: 6px;
+    box-shadow: .5px 3px 5px hsl(0, 2%, 37%);
+}
+.welcome-text-section{
+    padding: 9px;
+}
+#heading{
+    margin-top: 50px;
+}
+.login-section{
+    padding: 6px;
+}
+input{
+    display: block;
+    width: 90%;
+    padding:8px;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
