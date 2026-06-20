@@ -8,7 +8,7 @@ db=SQLAlchemy(app)
 class Employee(db.Model):
     empName=db.Column("Employee Name" , db.String(50) , nullable=False)
     empMail=db.Column("Employee Mail Id", db.String(50) ,nullable=False)
-    empPassword=db.Column("Employee Password" , db.String(20) , primary_key=True)
+    empPassword=db.Column("Employee Password" , db.String(20))
 
 with app.app_context():
     db.create_all()
