@@ -85,8 +85,6 @@ if tossUserSelection=="HEADS" or tossUserSelection=="TAILS":
             scoreDefended=playerBowling(battingScore)
             if scoreDefended<battingScore:
                 print(f"You have won by {battingScore-scoreDefended} runs")
-            # elif scoreDefended==battingScore:
-            #     print("Game ended in tie.")
             else:
                 print("You have lost...")
         else:
@@ -99,8 +97,6 @@ if tossUserSelection=="HEADS" or tossUserSelection=="TAILS":
             scoreChased=systemBowling(scoreToChase)
             if scoreToChase>scoreChased:
                 print(f"You have Lost by {scoreToChase-scoreChased}")
-            elif scoreToChase==scoreChased:
-                print("Game ended in tie.")
             else:
                 print("Congrats You have Won")
     else:
@@ -117,8 +113,6 @@ if tossUserSelection=="HEADS" or tossUserSelection=="TAILS":
             scoreChased=systemBowling(scoreToChase)
             if scoreToChase<scoreChased:
                 print("Congrats You have Won")
-            # elif scoreToChase==scoreChased:
-            #     print("Game ended in Tie")
             else:
                 print(f"You have Lost by {scoreToChase-scoreChased}")
         else:
